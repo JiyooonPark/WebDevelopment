@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name = "test" onsubmit="register()" onreset="reWrite()">
+        ID: <input type="text" id = "id" size="20" value="">
+        <p>
+        PW: <input type="password" id = "password" size = "20" value="">
+        </p>
+        <input type="submit" name="btn1" value="가입하기">
+        <input type="reset" name="btn2" value="다시 작성">
+    </form>
+    <script = "text/javascript">
+    function register(){
+        var elementId = document.getElementById("id");
+        var elementPw = document.getElementById("password");
+        //alert("??");
+        if(elementId != null && validPw(elementPw)) {
+           document.test.submit();
+            alert("회원가입 완료");  
+        }
+
+        else{
+            if(elementId == null){
+                alert("invalid ID");
+            //reset();
+            }
+            else if (!validPw(elementPw)){
+                alert("invalid PW");
+            //reset();
+            }
+            alert("invalid ID/PW");
+            //reset();
+        }
+       //alert("?");
+    }
+    function reWrite(){
+        document.test.reset();
+        alert("reenter everything. ");
+    }
+    function validPw(elementPw){
+        if(elementPw.length>=8 &&elementPw.length<=12){
+            alert("valid");
+            return true;
+        }
+        return false;
+    }
+    </script>
+   
+</body>
+</html>
