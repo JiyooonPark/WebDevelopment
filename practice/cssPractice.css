@@ -1,0 +1,18 @@
+
+#header-id{
+    font-size: large;
+
+}
+
+.p-id{
+
+}
+.text1{
+    background-color: darkmagenta;
+}
+p:nth-child(odd){
+    background-color: darkolivegreen;
+}
+p:nth-child(even){
+    background-color: lightcoral;
+}

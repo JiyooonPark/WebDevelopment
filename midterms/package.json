@@ -1,0 +1,22 @@
+{
+  "name": "webdevelopment",
+  "version": "1.0.0",
+  "description": "This is a intro to node project",
+  "main": "udemy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiyoonpark0207/WebDevelopment.git"
+  },
+  "author": "Jiyoon Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiyoonpark0207/WebDevelopment/issues"
+  },
+  "homepage": "https://github.com/jiyoonpark0207/WebDevelopment#readme",
+  "dependencies": {
+    "superheroes": "^3.0.0"
+  }
+}
