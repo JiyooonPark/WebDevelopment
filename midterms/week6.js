@@ -78,3 +78,4 @@ function reWrite() {
   document.test.reset();
   alert("다시 입력하세요.");
 }
+

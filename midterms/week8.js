@@ -13,3 +13,8 @@ http.createServer(function (req, res) {
   res.end(txt);
   res.end();
 }).listen(8080);
+
+var cat = require('./week8_cat');
+
+console.log(cat.age);
+cat.hello();

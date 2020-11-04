@@ -10,7 +10,7 @@
     <h2>Order Results</h2>
 
     <?php
-    echo '<p>Order processed at';
+    echo '<p>Order processed at ';
     echo date('H:i, jS F Y');
     echo "</p>";
 
@@ -64,10 +64,10 @@
     $fp = fopen("$document_root/orders.txt", 'a');
     $_SERVER['DOCUMENT_ROOT'];
 
-    $output = $date.' '.$tireqty.' tires '.$oilqty.' oil '.$sparkqty.' spark plugs$'.$totalamount.' '.$address.PHP_EOL;
+    $output = $date.' '.$tireqty.' tires '.$oilqty.' oil '.$sparkqty.' spark plugs $'.$totalamount.' '.$address.PHP_EOL;
     fwrite($fp, $output, strlen($output));
     fclose($fp);
-    
+
     ?>
 </body>
 
