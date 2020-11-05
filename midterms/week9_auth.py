@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /guestbook/{entry} {
+      allow read: if request.auth.uid != null;
+      allow create:
+      if request.auth.uid == request.resource.data.userId
+          && "name" in request.resource.data
+          && "text" in request.resource.data
+          && "timestamp" in request.resource.data;
+    }
+    match /attendees/{userId} {
+      allow read: if true;
+      allow write: if request.auth.uid == userId
+          && "attending" in request.resource.data;
+
+    }
+  }
+}
+#https://codelabs.developers.google.com/codelabs/firebase-get-to-know-web#8
