@@ -7,3 +7,7 @@ for(var i=0; i<5; i++){
     f*=(i+1);
 }
 console.log(f);
+
+var element = document.getElementById("bgColor");
+
+document.bgColor = element.value();
