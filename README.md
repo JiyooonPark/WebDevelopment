@@ -1,8 +1,6 @@
-started : 2020-11-02
+repository for backend studies
 
-repo made to 
-
-    1. keep record of web development learning process
+    Language used : PHP, mySQL, SQLite
     
-    2. prepare for my midterms :)
-    
+    started: 2021-10-22
+   
